@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #afficher task
   get '/tasks/:id', to: 'tasks#show', as: 'task'
   #Créer task
-  get '/tasks/new', to: 'tasks#nex'
+  get '/tasks/new', to: 'tasks#new'
   post '/tasks', to: 'tasks#create'
   #Update task
   get '/tasks/:id/edit', to: 'tasks#edit'
